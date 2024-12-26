@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <!-- <link rel="stylesheet" href="../fonts/font-awesome.min.css">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="warningContainer">
+        <div class="warning"> 
+            <p>username or password is wrong!</p>
+            <button class="wrnBtn"> OK !</button>
+        </div>
+    </div>
+    <div class="form">
+        <form  id="formm">
+            <h1>WELLCOME!</h1>
+            <p><span>login</span> to your account</p>
+            <div class="userName">
+                <label for="userName">UserName :</label>
+                <input type="text" id="user"><i class="fa fa-user-o" aria-hidden="true"></i>
+            </div>
+            <div class="password">
+                <label for="password">password :</label>
+                <input type="password" name="" id="pass"> <i class="fa fa-eye" aria-hidden="true" id="eye" title="show password"></i>
+            </div>
+            <input type="submit" value="log in" title="click to log in" id="submit">
+            <p>didn't have account?  <br> <a href="./signIn.html" title="click to sign in">sign in</a></p>
+        </form>
+    </div>
+    <script src="../javascript/login.js"></script>
+</body>
+</html>
