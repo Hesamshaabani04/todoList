@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+button, a, input[type=button], input[type=submit] {
+    cursor: pointer;
+ } 
+ body{
+    background-color: black;
+ }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.image{
+    height: 87vh;
+    width: 60vh;
+    background-image: url(../photos/Screenshot\ 2024-12-14\ 060626.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image > p{
+padding-bottom: 80px;
+padding-top: 20px;
+}
+
+.image >p ,.image >h1{
+    text-shadow: 1px 1px black ;
+}
+form{
+    margin-left: -2px;
+    padding-right: 60px;
+    border-radius: 4px ;
+    border-top: 2px  solid rgba(255,142,0,1) ;
+    border-right: 2px solid rgba(195,173,0,1) ;
+    border-bottom: 2px solid rgba(0,128,135,1) ;
+    height: 86.6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    align-items: center;
+}
+input{
+    background-color: black;
+    border: none;
+    border-bottom:2px solid white  ;
+}
+input:focus{
+    outline: none;
+    border-bottom:rgba(255,142,0,1) 3px solid ;
+}
+input[type = "submit"]{
+    margin-left: 75px;
+    width: 180px;
+    height: 30px;
+    background: linear-gradient(24deg, rgba(2,79,78,1) 0%, rgba(0,128,135,1) 35%, rgba(195,173,0,1) 60%, rgba(255,142,0,1) 80%);
+    border: none;
+}
+.inputs{
+    margin-left: 40px;
+    width: 350px;
+}
+
+input[type = "text"]{
+    width: 240px;
+}
+input[type = "password"]{
+    width: 240px;
+}
+input[type = "email"]{
+    width: 180px;
+}
+span{
+    background: linear-gradient(24deg, rgba(2,79,78,1) 0%, rgba(0,128,135,1) 35%, rgba(195,173,0,1) 60%, rgba(255,142,0,1) 80%);
+
+}
+.responsive{
+    display: none ;
+    
+}
+/* problems:whe you click on eye icon it changes the STYLE and changes input[type ="password"] size  */
+i{
+    margin-left: -15px;
+}
+@media screen and (max-width : 760PX) {
+    body{
+        background-image: url(../photos/Screenshot\ 2024-12-14\ 060626.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+    form{
+        background-color: black;
+        border-left:rgba(0, 128, 135, 1) 3px solid ;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+    } 
+    .image{
+        display: none;
+    }
+}
